@@ -1,3 +1,30 @@
+This is a fork of Notepad++ Plugin Template that you can found here https://github.com/npp-plugins/plugintemplate
+This fork is a template that you can compile with GNU g++;
+I have manually created a .sln, than Codelite IDE can import the project,
+after small configuration editing I release a complete project that make:
+-Debug for Unicode 32 and 64 bit
+-Release Unicode and Ansi, 32 and 64 bit in bin/ directory
+
+You can find visual studio project in vc.proj folder (you can import in a IDE that support .sln)
+and codelite project in project folder, if you want you can see a makefile example in project/NppPluginTemplate.mk,
+this is only single configuration for example Release-Unicode-64, you have to copy and edit this file for more configurations.
+To compile with g++ you have to create a makefile as this:
+
+//.PHONY: clean All
+//
+//All:
+//	@echo "----------Building project:[ NppPluginTemplate - Release_Unicode_x64 ]----------"
+//	@cd "plugintemplate\project" && "$(MAKE)" -f  "NppPluginTemplate.mk" && "$(MAKE)" -f  "NppPluginTemplate.mk" PostBuild
+//clean:
+//	@echo "----------Cleaning project:[ NppPluginTemplate - Release_Unicode_x64 ]----------"
+//	@cd "plugintemplate\project" && "$(MAKE)" -f  "NppPluginTemplate.mk" clean
+
+then do make All (or mingw32-make All)
+
+The author readme original text:
+
+
+
 Even your grandmom can do it!
 
 This template is done for making plugin development as easy and simple as possible.

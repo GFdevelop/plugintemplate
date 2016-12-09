@@ -1,0 +1,1 @@
+./Release_Unicode_Win32/DockingFeature_GoToLineDlg.cpp.o ./Release_Unicode_Win32/DockingFeature_StaticDialog.cpp.o ./Release_Unicode_Win32/NppPluginDemo.cpp.o ./Release_Unicode_Win32/PluginDefinition.cpp.o ./Release_Unicode_Win32/DockingFeature_goLine.rc.o ./Release_Unicode_Win32/NppPluginDemo.rc.o   
